@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://ckm4dnt1yyrlv"]
+[gd_scene load_steps=9 format=3 uid="uid://ckm4dnt1yyrlv"]
 
 [ext_resource type="Texture2D" uid="uid://cy2b0hca1lbf8" path="res://EllieBackground.png" id="1_cqjrg"]
 [ext_resource type="Texture2D" uid="uid://ci0nm4hh4x6cb" path="res://EllieNeutral.png" id="2_e2xy7"]
 [ext_resource type="PackedScene" uid="uid://c0o4c4yive5pn" path="res://Start_btn.tscn" id="3_fimr5"]
+[ext_resource type="Script" uid="uid://y0cgej3dqa73" path="res://start_btn.gd" id="4_e2xy7"]
 [ext_resource type="PackedScene" uid="uid://csh16pysbvsgw" path="res://Back_btn.tscn" id="4_u7cqb"]
 [ext_resource type="Texture2D" uid="uid://bb7rkfdn0bgqa" path="res://EllieBubble2.png" id="5_afec1"]
 [ext_resource type="Texture2D" uid="uid://bw5aib7dpu2t6" path="res://Title_txt.png" id="6_31qfy"]
@@ -21,16 +22,17 @@ scale = Vector2(0.26709, 0.277018)
 texture = ExtResource("2_e2xy7")
 
 [node name="Button" parent="." instance=ExtResource("3_fimr5")]
-offset_left = 16.0
-offset_top = 196.0
-offset_right = 364.0
-offset_bottom = 397.0
+offset_left = 48.0
+offset_top = 273.0
+offset_right = 349.0
+offset_bottom = 403.0
+script = ExtResource("4_e2xy7")
 
 [node name="Button2" parent="." instance=ExtResource("4_u7cqb")]
-offset_left = 24.0
-offset_top = 426.0
-offset_right = 357.0
-offset_bottom = 640.0
+offset_left = 65.0
+offset_top = 467.0
+offset_right = 332.0
+offset_bottom = 600.0
 
 [node name="EllieBubble2" type="Sprite2D" parent="."]
 position = Vector2(780, 254)

@@ -3,10 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://cmothd85w5724" path="res://EllieBack.png" id="1_4fayo"]
 
 [node name="Button" type="Button"]
-offset_right = 340.0
-offset_bottom = 230.0
+offset_left = 177.0
+offset_top = 111.0
+offset_right = 443.0
+offset_bottom = 245.0
 
 [node name="EllieBack" type="Sprite2D" parent="."]
-position = Vector2(166, 113)
-scale = Vector2(0.25, 0.261)
+position = Vector2(133, 68)
+scale = Vector2(0.236328, 0.204719)
 texture = ExtResource("1_4fayo")

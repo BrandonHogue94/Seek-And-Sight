@@ -1,3 +1,17 @@
-[gd_scene format=3 uid="uid://dby27ol52k8dg"]
+[gd_scene load_steps=3 format=3 uid="uid://dby27ol52k8dg"]
+
+[ext_resource type="Texture2D" uid="uid://cy2b0hca1lbf8" path="res://EllieBackground.png" id="1_qeblm"]
+[ext_resource type="Texture2D" uid="uid://3ckjvq15ldp3" path="res://EllieGesture.png" id="2_km0fr"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="EllieBackground" type="Sprite2D" parent="."]
+position = Vector2(575, 326)
+scale = Vector2(0.755208, 0.648438)
+texture = ExtResource("1_qeblm")
+
+[node name="EllieGesture" type="Sprite2D" parent="."]
+position = Vector2(175, 454)
+scale = Vector2(0.428711, 0.338542)
+texture = ExtResource("2_km0fr")
+flip_h = true

@@ -3,10 +3,17 @@
 [ext_resource type="Texture2D" uid="uid://cq02pwxyspqcx" path="res://ElliePlay.png" id="1_x68jq"]
 
 [node name="Button" type="Button"]
-offset_right = 351.0
-offset_bottom = 192.0
+anchors_preset = -1
+anchor_top = 0.032
+anchor_right = 0.275
+anchor_bottom = 0.237
+offset_left = 422.0
+offset_top = 234.264
+offset_right = 404.2
+offset_bottom = 237.424
+icon_alignment = 1
 
 [node name="ElliePlay" type="Sprite2D" parent="."]
-position = Vector2(172, 99)
+position = Vector2(144, 69)
 scale = Vector2(0.25, 0.228)
 texture = ExtResource("1_x68jq")
