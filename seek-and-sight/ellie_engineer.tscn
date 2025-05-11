@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1w1o441o2n7p"]
+
+[ext_resource type="Texture2D" uid="uid://vxvhdps3v3ok" path="res://EllieBackground.png" id="1_08v3i"]
+[ext_resource type="Texture2D" uid="uid://df4q2dpoynxhh" path="res://EllieNeutral.png" id="2_cices"]
+
+[node name="EllieEngineer" type="Node2D"]
+
+[node name="EllieBackground" type="Sprite2D" parent="."]
+position = Vector2(574.5, 324)
+scale = Vector2(0.751953, 0.630859)
+texture = ExtResource("1_08v3i")
+
+[node name="EllieNeutral" type="Sprite2D" parent="."]
+position = Vector2(769, 439.625)
+scale = Vector2(0.318359, 0.306803)
+texture = ExtResource("2_cices")

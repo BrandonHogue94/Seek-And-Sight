@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://csh16pysbvsgw"]
+
+[ext_resource type="Texture2D" uid="uid://cmothd85w5724" path="res://EllieBack.png" id="1_4fayo"]
+
+[node name="Button" type="Button"]
+offset_right = 340.0
+offset_bottom = 230.0
+
+[node name="EllieBack" type="Sprite2D" parent="."]
+position = Vector2(166, 113)
+scale = Vector2(0.25, 0.261)
+texture = ExtResource("1_4fayo")
