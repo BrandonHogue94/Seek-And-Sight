@@ -1,0 +1,79 @@
+[gd_scene load_steps=10 format=3 uid="uid://ccbqt0qvlbkoh"]
+
+[ext_resource type="Texture2D" uid="uid://cy2b0hca1lbf8" path="res://EllieBackground.png" id="1_dk433"]
+[ext_resource type="Texture2D" uid="uid://dfgthuddou8hk" path="res://EllieTools_Hammer.png" id="2_uuolx"]
+[ext_resource type="Texture2D" uid="uid://bs2nxpyhlkja2" path="res://EllieTools_Saw.png" id="3_jcwpj"]
+[ext_resource type="Texture2D" uid="uid://ctk8ux45b8jgr" path="res://EllieTools_Screwdriver.png" id="4_c1k7c"]
+[ext_resource type="Texture2D" uid="uid://ci0nm4hh4x6cb" path="res://EllieNeutral.png" id="5_4mm10"]
+[ext_resource type="Texture2D" uid="uid://dj17y55oixoo" path="res://EllieTools_Shears.png" id="6_ubvik"]
+[ext_resource type="Texture2D" uid="uid://bsmklgv0kxrk6" path="res://EllieTools_Wrench.png" id="7_2bj6g"]
+[ext_resource type="Texture2D" uid="uid://df5htlubgihr7" path="res://EllieBlocks4.png" id="8_4ghb5"]
+[ext_resource type="Texture2D" uid="uid://dgykx1ud7f7pt" path="res://EllieBubble5.png" id="9_uuolx"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="EllieBackground" type="Sprite2D" parent="."]
+position = Vector2(575, 336)
+scale = Vector2(0.753906, 0.65332)
+texture = ExtResource("1_dk433")
+
+[node name="EllieToolsHammer" type="Sprite2D" parent="."]
+position = Vector2(67, 448)
+scale = Vector2(0.337983, 0.331967)
+texture = ExtResource("2_uuolx")
+
+[node name="EllieToolsSaw" type="Sprite2D" parent="."]
+position = Vector2(205, 433)
+scale = Vector2(0.297881, 0.319162)
+texture = ExtResource("3_jcwpj")
+
+[node name="EllieToolsScrewdriver" type="Sprite2D" parent="."]
+position = Vector2(617, 438)
+scale = Vector2(0.428435, 0.391904)
+texture = ExtResource("4_c1k7c")
+
+[node name="EllieToolsShears" type="Sprite2D" parent="."]
+position = Vector2(475, 445)
+scale = Vector2(0.351974, 0.325276)
+texture = ExtResource("6_ubvik")
+
+[node name="EllieToolsWrench" type="Sprite2D" parent="."]
+position = Vector2(335, 434)
+scale = Vector2(0.299107, 0.317154)
+texture = ExtResource("7_2bj6g")
+flip_h = true
+
+[node name="EllieBlocks4" type="Sprite2D" parent="."]
+position = Vector2(66.125, 598.25)
+scale = Vector2(0.412362, 0.378846)
+texture = ExtResource("8_4ghb5")
+
+[node name="EllieBlocks5" type="Sprite2D" parent="."]
+position = Vector2(197, 601)
+scale = Vector2(0.423432, 0.394231)
+texture = ExtResource("8_4ghb5")
+
+[node name="EllieBlocks6" type="Sprite2D" parent="."]
+position = Vector2(327, 599)
+scale = Vector2(0.380996, 0.388462)
+texture = ExtResource("8_4ghb5")
+
+[node name="EllieBlocks7" type="Sprite2D" parent="."]
+position = Vector2(457.375, 600)
+scale = Vector2(0.469557, 0.4)
+texture = ExtResource("8_4ghb5")
+
+[node name="EllieBlocks8" type="Sprite2D" parent="."]
+position = Vector2(616.625, 599.5)
+scale = Vector2(0.475092, 0.380769)
+texture = ExtResource("8_4ghb5")
+
+[node name="EllieNeutral" type="Sprite2D" parent="."]
+position = Vector2(945.104, 453.921)
+scale = Vector2(0.37932, 0.294377)
+texture = ExtResource("5_4mm10")
+
+[node name="EllieBubble5" type="Sprite2D" parent="."]
+position = Vector2(883.25, 148.5)
+scale = Vector2(1.11598, 1.11607)
+texture = ExtResource("9_uuolx")

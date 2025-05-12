@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://ixrnn5efg1ok"]
+
+[ext_resource type="Texture2D" uid="uid://cy2b0hca1lbf8" path="res://EllieBackground.png" id="1_mrcpn"]
+[ext_resource type="Texture2D" uid="uid://5hpjm1frp63h" path="res://EllieBlocks1.png" id="2_aamrf"]
+[ext_resource type="Texture2D" uid="uid://dvqp3vinkm2lo" path="res://EllieBlocks2.png" id="3_phpqy"]
+[ext_resource type="Texture2D" uid="uid://3ckjvq15ldp3" path="res://EllieGesture.png" id="4_mpjth"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="EllieBackground" type="Sprite2D" parent="."]
+position = Vector2(577.5, 327)
+scale = Vector2(0.753255, 0.640625)
+texture = ExtResource("1_mrcpn")
+
+[node name="EllieBlocks1" type="Sprite2D" parent="."]
+position = Vector2(174, 708)
+texture = ExtResource("2_aamrf")
+
+[node name="EllieBlocks4" type="Sprite2D" parent="."]
+position = Vector2(418, 667)
+scale = Vector2(0.637363, 0.391304)
+texture = ExtResource("3_phpqy")
+
+[node name="EllieBlocks3" type="Sprite2D" parent="."]
+position = Vector2(553, 665)
+scale = Vector2(0.647436, 0.347826)
+texture = ExtResource("3_phpqy")
+
+[node name="EllieBlocks6" type="Sprite2D" parent="."]
+position = Vector2(711.688, 667.25)
+scale = Vector2(0.818224, 0.363044)
+texture = ExtResource("3_phpqy")
+
+[node name="EllieBlocks7" type="Sprite2D" parent="."]
+position = Vector2(869, 667.25)
+scale = Vector2(0.64011, 0.371739)
+texture = ExtResource("3_phpqy")
+
+[node name="EllieBlocks2" type="Sprite2D" parent="."]
+position = Vector2(1120, 713)
+texture = ExtResource("2_aamrf")
+
+[node name="EllieGesture" type="Sprite2D" parent="."]
+position = Vector2(116.5, 481)
+scale = Vector2(0.325195, 0.33724)
+texture = ExtResource("4_mpjth")
+flip_h = true
