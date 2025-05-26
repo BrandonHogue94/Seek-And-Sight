@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dby27ol52k8dg"]
+[gd_scene load_steps=9 format=3 uid="uid://dby27ol52k8dg"]
 
 [ext_resource type="Texture2D" uid="uid://cy2b0hca1lbf8" path="res://EllieBackground.png" id="1_qeblm"]
 [ext_resource type="Texture2D" uid="uid://3ckjvq15ldp3" path="res://EllieGesture.png" id="2_km0fr"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dvqp3vinkm2lo" path="res://EllieBlocks2.png" id="5_8uyqf"]
 [ext_resource type="Texture2D" uid="uid://c8v4fhsae6cv6" path="res://EllieBlocks3.png" id="6_gjjhn"]
 [ext_resource type="Texture2D" uid="uid://c0wly8e4qsg1t" path="res://EllieBubble1.png" id="7_mjpkj"]
+[ext_resource type="Texture2D" uid="uid://15g5sp4bhsm3" path="res://Ellie Texts MW1.1.jpg" id="8_di2jp"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -22,31 +23,61 @@ texture = ExtResource("2_km0fr")
 flip_h = true
 
 [node name="EllieBlocks1" type="Sprite2D" parent="."]
-position = Vector2(347.375, 593.875)
+position = Vector2(907, 324)
 scale = Vector2(0.520208, 0.482228)
 texture = ExtResource("3_05lqy")
 
 [node name="EllieBlocks2" type="Sprite2D" parent="."]
-position = Vector2(567, 592)
+position = Vector2(1019, 205)
 scale = Vector2(0.511836, 0.459124)
 texture = ExtResource("3_05lqy")
 
 [node name="EllieBlocks4" type="Sprite2D" parent="."]
-position = Vector2(801.813, 590.875)
+position = Vector2(991, 78)
 scale = Vector2(0.835332, 0.375962)
 texture = ExtResource("4_di2jp")
 
 [node name="EllieBlocks3" type="Sprite2D" parent="."]
-position = Vector2(461, 508)
+position = Vector2(776, 203)
 scale = Vector2(0.868132, 0.447826)
 texture = ExtResource("5_8uyqf")
 
 [node name="EllieBlocks5" type="Sprite2D" parent="."]
-position = Vector2(693.875, 505.625)
+position = Vector2(711, 87)
 scale = Vector2(1.29147, 0.55)
 texture = ExtResource("6_gjjhn")
 
 [node name="EllieBubble1" type="Sprite2D" parent="."]
-position = Vector2(411.5, 122)
+position = Vector2(281, 112)
 scale = Vector2(1.38679, 1)
 texture = ExtResource("7_mjpkj")
+
+[node name="EllieBlocks6" type="Sprite2D" parent="."]
+position = Vector2(332, 581)
+scale = Vector2(0.48155, 0.442308)
+texture = ExtResource("4_di2jp")
+
+[node name="EllieBlocks7" type="Sprite2D" parent="."]
+position = Vector2(566, 577)
+scale = Vector2(0.48155, 0.442308)
+texture = ExtResource("4_di2jp")
+
+[node name="EllieBlocks8" type="Sprite2D" parent="."]
+position = Vector2(831, 571)
+scale = Vector2(0.48155, 0.442308)
+texture = ExtResource("4_di2jp")
+
+[node name="EllieBlocks9" type="Sprite2D" parent="."]
+position = Vector2(702, 469)
+scale = Vector2(0.48155, 0.442308)
+texture = ExtResource("4_di2jp")
+
+[node name="EllieBlocks10" type="Sprite2D" parent="."]
+position = Vector2(456, 469)
+scale = Vector2(0.48155, 0.442308)
+texture = ExtResource("4_di2jp")
+
+[node name="EllieTextsMw1_1" type="Sprite2D" parent="."]
+position = Vector2(693.25, 93.25)
+scale = Vector2(1.35217, 1.1)
+texture = ExtResource("8_di2jp")
