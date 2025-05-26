@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cmothd85w5724" path="res://EllieBack.png" id="1_4fayo"]
 
-[node name="Button" type="Button"]
+[node name="Quit" type="Button"]
 offset_left = 177.0
 offset_top = 111.0
 offset_right = 443.0
