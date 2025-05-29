@@ -27,7 +27,7 @@ scale = Vector2(0.647436, 0.347826)
 texture = ExtResource("3_phpqy")
 
 [node name="EllieBlocks6" type="Sprite2D" parent="."]
-position = Vector2(711.688, 667.25)
+position = Vector2(715, 666)
 scale = Vector2(0.818224, 0.363044)
 texture = ExtResource("3_phpqy")
 
