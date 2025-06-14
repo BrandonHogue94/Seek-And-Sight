@@ -1,0 +1,187 @@
+[gd_scene load_steps=19 format=3 uid="uid://dby27ol52k8dg"]
+
+[ext_resource type="Script" uid="uid://k2kcuynrdgg4" path="res://minigame_1.gd" id="1_di2jp"]
+[ext_resource type="Texture2D" uid="uid://cy2b0hca1lbf8" path="res://EllieBackground.png" id="1_qeblm"]
+[ext_resource type="Texture2D" uid="uid://3ckjvq15ldp3" path="res://EllieGesture.png" id="2_km0fr"]
+[ext_resource type="Texture2D" uid="uid://5hpjm1frp63h" path="res://EllieBlocks1.png" id="3_05lqy"]
+[ext_resource type="Texture2D" uid="uid://df5htlubgihr7" path="res://EllieBlocks4.png" id="4_di2jp"]
+[ext_resource type="Texture2D" uid="uid://dvqp3vinkm2lo" path="res://EllieBlocks2.png" id="5_8uyqf"]
+[ext_resource type="Script" uid="uid://btdrcp4koy7i5" path="res://brick_1.gd" id="5_slf6r"]
+[ext_resource type="Texture2D" uid="uid://c8v4fhsae6cv6" path="res://EllieBlocks3.png" id="6_gjjhn"]
+[ext_resource type="Texture2D" uid="uid://c0wly8e4qsg1t" path="res://EllieBubble1.png" id="7_mjpkj"]
+[ext_resource type="Script" uid="uid://bmdkmvq3kd1rt" path="res://brick_2.gd" id="8_cyc5l"]
+[ext_resource type="Script" uid="uid://d3fk1qvkaxsvx" path="res://brick_3.gd" id="10_d4aim"]
+[ext_resource type="Script" uid="uid://chqmb80b4ftox" path="res://brick_4.gd" id="13_ytcd1"]
+[ext_resource type="Script" uid="uid://dvyyuepjk7a5u" path="res://brick_5.gd" id="16_wwyv3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q3vbl"]
+size = Vector2(215, 94)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_slf6r"]
+size = Vector2(211.5, 87.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cyc5l"]
+size = Vector2(223, 105)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d4aim"]
+size = Vector2(216, 92)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ytcd1"]
+size = Vector2(255.5, 94.5)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_di2jp")
+
+[node name="EllieBackground" type="Sprite2D" parent="."]
+position = Vector2(575, 326)
+scale = Vector2(0.755208, 0.648438)
+texture = ExtResource("1_qeblm")
+
+[node name="EllieGesture" type="Sprite2D" parent="."]
+position = Vector2(95, 469)
+scale = Vector2(0.428711, 0.338542)
+texture = ExtResource("2_km0fr")
+flip_h = true
+
+[node name="EllieBubble1" type="Sprite2D" parent="."]
+position = Vector2(501, 153)
+scale = Vector2(1.80472, 1.37918)
+texture = ExtResource("7_mjpkj")
+
+[node name="Minigame1rules" type="Label" parent="EllieBubble1"]
+offset_left = -126.0
+offset_top = -64.0
+offset_right = 158.0
+offset_bottom = 87.0
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="EllieBubble1"]
+offset_left = -11.0821
+offset_top = 59.4557
+offset_right = 33.9179
+offset_bottom = 94.4557
+text = "OK"
+
+[node name="Brick1" type="Area2D" parent="." groups=["Bricks"]]
+script = ExtResource("5_slf6r")
+
+[node name="EllieBlocks1" type="Sprite2D" parent="Brick1"]
+position = Vector2(1031, 249)
+scale = Vector2(0.520208, 0.482228)
+texture = ExtResource("3_05lqy")
+
+[node name="Label1" type="Label" parent="Brick1/EllieBlocks1"]
+offset_left = -201.842
+offset_top = -51.8427
+offset_right = 156.158
+offset_bottom = 91.1573
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Brick1"]
+position = Vector2(1032.5, 249)
+shape = SubResource("RectangleShape2D_q3vbl")
+
+[node name="Brick2" type="Area2D" parent="." groups=["Bricks"]]
+script = ExtResource("8_cyc5l")
+
+[node name="EllieBlocks2" type="Sprite2D" parent="Brick2"]
+position = Vector2(333, 543)
+scale = Vector2(0.511836, 0.459124)
+texture = ExtResource("3_05lqy")
+
+[node name="Label2" type="Label" parent="Brick2/EllieBlocks2"]
+offset_left = -173.884
+offset_top = -41.3832
+offset_right = 119.116
+offset_bottom = 69.6168
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Brick2"]
+position = Vector2(334.25, 542.25)
+shape = SubResource("RectangleShape2D_slf6r")
+
+[node name="Brick3" type="Area2D" parent="." groups=["Bricks"]]
+script = ExtResource("10_d4aim")
+
+[node name="EllieBlocks3" type="Sprite2D" parent="Brick3"]
+position = Vector2(981, 406)
+scale = Vector2(0.868132, 0.447826)
+texture = ExtResource("5_8uyqf")
+
+[node name="Label3" type="Label" parent="Brick3/EllieBlocks3"]
+offset_left = -114.038
+offset_top = -58.0581
+offset_right = 60.962
+offset_bottom = 93.9419
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Brick3"]
+position = Vector2(977.5, 405.5)
+shape = SubResource("RectangleShape2D_cyc5l")
+
+[node name="Brick4" type="Area2D" parent="." groups=["Bricks"]]
+script = ExtResource("13_ytcd1")
+
+[node name="EllieBlocks4" type="Sprite2D" parent="Brick4"]
+position = Vector2(126, 68)
+scale = Vector2(0.835332, 0.375962)
+texture = ExtResource("4_di2jp")
+
+[node name="Label4" type="Label" parent="Brick4/EllieBlocks4"]
+offset_left = -116.121
+offset_top = -77.1355
+offset_right = 81.8785
+offset_bottom = 105.865
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Brick4"]
+position = Vector2(127, 64)
+shape = SubResource("RectangleShape2D_d4aim")
+
+[node name="Brick5" type="Area2D" parent="." groups=["Bricks"]]
+script = ExtResource("16_wwyv3")
+
+[node name="EllieBlocks5" type="Sprite2D" parent="Brick5"]
+position = Vector2(999, 61)
+scale = Vector2(1.29147, 0.55)
+texture = ExtResource("6_gjjhn")
+
+[node name="Label5" type="Label" parent="Brick5/EllieBlocks5"]
+offset_left = -81.0
+offset_top = -49.0
+offset_right = 52.0
+offset_bottom = 67.0
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Brick5"]
+position = Vector2(1004.75, 57.75)
+shape = SubResource("RectangleShape2D_ytcd1")
+
+[connection signal="pressed" from="EllieBubble1/Button" to="." method="_on_OKbutton_pressed"]
+[connection signal="area_entered" from="Brick1" to="Brick1" method="_on_area_entered"]
+[connection signal="area_exited" from="Brick1" to="Brick1" method="_on_area_exited"]
+[connection signal="input_event" from="Brick1" to="Brick1" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="Brick2" to="Brick2" method="_on_area_entered"]
+[connection signal="area_exited" from="Brick2" to="Brick2" method="_on_area_exited"]
+[connection signal="input_event" from="Brick2" to="Brick2" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="Brick3" to="Brick3" method="_on_area_entered"]
+[connection signal="area_exited" from="Brick3" to="Brick3" method="_on_area_exited"]
+[connection signal="input_event" from="Brick3" to="Brick3" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="Brick4" to="Brick4" method="_on_area_entered"]
+[connection signal="area_exited" from="Brick4" to="Brick4" method="_on_area_exited"]
+[connection signal="input_event" from="Brick4" to="Brick4" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="Brick5" to="Brick5" method="_on_area_entered"]
+[connection signal="area_exited" from="Brick5" to="Brick5" method="_on_area_exited"]
+[connection signal="input_event" from="Brick5" to="Brick5" method="_on_Area2D_input_event"]

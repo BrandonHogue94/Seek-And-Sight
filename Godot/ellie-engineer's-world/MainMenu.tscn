@@ -1,7 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://ckm4dnt1yyrlv"]
+[gd_scene load_steps=10 format=3 uid="uid://ckm4dnt1yyrlv"]
 
 [ext_resource type="Texture2D" uid="uid://cy2b0hca1lbf8" path="res://EllieBackground.png" id="1_cqjrg"]
-[ext_resource type="Script" uid="uid://cquytqt553bo8" path="res://main_menu.gd" id="1_e2xy7"]
+
 [ext_resource type="Texture2D" uid="uid://ci0nm4hh4x6cb" path="res://EllieNeutral.png" id="2_e2xy7"]
 [ext_resource type="Texture2D" uid="uid://bb7rkfdn0bgqa" path="res://EllieBubble2.png" id="5_afec1"]
 [ext_resource type="Texture2D" uid="uid://bw5aib7dpu2t6" path="res://Title_txt.png" id="6_31qfy"]
@@ -9,8 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dwf0j7vmr2mg6" path="res://Welcome_txt.png" id="7_qie43"]
 [ext_resource type="Texture2D" uid="uid://cmothd85w5724" path="res://EllieBack.png" id="8_fimr5"]
 
-[node name="Node2D" type="Node2D"]
-script = ExtResource("1_e2xy7")
+
 
 [node name="EllieBackground" type="Sprite2D" parent="."]
 position = Vector2(578, 333)
@@ -21,6 +20,7 @@ texture = ExtResource("1_cqjrg")
 position = Vector2(1048, 471)
 scale = Vector2(0.26709, 0.277018)
 texture = ExtResource("2_e2xy7")
+
 
 [node name="EllieBubble2" type="Sprite2D" parent="."]
 position = Vector2(780, 254)
@@ -37,27 +37,4 @@ position = Vector2(803.125, 258.875)
 scale = Vector2(0.477468, 0.744535)
 texture = ExtResource("7_qie43")
 
-[node name="Play" type="Button" parent="."]
-offset_left = 106.0
-offset_top = 297.0
-offset_right = 457.0
-offset_bottom = 455.0
 
-[node name="Quit" type="Button" parent="."]
-offset_left = 110.0
-offset_top = 472.0
-offset_right = 461.0
-offset_bottom = 630.0
-
-[node name="ElliePlay" type="Sprite2D" parent="."]
-position = Vector2(275.75, 374)
-scale = Vector2(0.305013, 0.257812)
-texture = ExtResource("7_e2xy7")
-
-[node name="EllieBack" type="Sprite2D" parent="."]
-position = Vector2(286, 553)
-scale = Vector2(0.310384, 0.247559)
-texture = ExtResource("8_fimr5")
-
-[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
