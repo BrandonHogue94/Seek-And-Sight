@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cq02pwxyspqcx" path="res://ElliePlay.png" id="1_x68jq"]
 
-[node name="Button" type="Button"]
+[node name="Start" type="Button"]
 anchors_preset = -1
 anchor_top = 0.032
 anchor_right = 0.275
@@ -14,6 +14,6 @@ offset_bottom = 237.424
 icon_alignment = 1
 
 [node name="ElliePlay" type="Sprite2D" parent="."]
-position = Vector2(144, 69)
+position = Vector2(144, 68)
 scale = Vector2(0.25, 0.228)
 texture = ExtResource("1_x68jq")

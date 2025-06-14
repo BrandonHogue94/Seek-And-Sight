@@ -18,7 +18,7 @@ scale = Vector2(0.753906, 0.65332)
 texture = ExtResource("1_dk433")
 
 [node name="EllieToolsHammer" type="Sprite2D" parent="."]
-position = Vector2(67, 448)
+position = Vector2(72, 443)
 scale = Vector2(0.337983, 0.331967)
 texture = ExtResource("2_uuolx")
 
